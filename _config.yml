@@ -1,0 +1,24 @@
+# Site settings
+title: Brett and Jacyln Reierson
+name: Brett and Jacyln Reierson
+email: info@flyforlife.ca
+header-img: img/home-bg.jpg
+nav-brand: "Fly for Life"
+description: "Brett and Jacyln Reierson working with Mission Aviation Fellowship (MAF)"
+keywords: "Fly for life, MAF, Brett Reierson, Brett & Jacyln Reierson"
+baseurl: ""
+url: "http://flyforlife.ca"
+encoding: utf-8
+
+# Social networks 
+twitter_username: brettnjaclyn
+facebook_username:  brettnjaclyn.reierson
+#github_username: flyforlife 
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+paginate: 5
+exclude: ["Gemfile", "Gemfile.lock", "node_modules","package.json", "*.bat"]
+#excerpt_separator: ""
+#gems: [octopress-debugger]

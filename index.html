@@ -1,0 +1,35 @@
+---
+layout: page
+title: Brett & Jacyln Reierson
+---
+<p>Brett and Jacyln Reierson are bringing life to the people of DR Congo in Africa by sharing God's love through avaiation and technology.  As a pilot and flight mechanic, Brett flies goods and personnel to service the needs of communities in rural locations through <a href="http://www.mafcanada.ca" target="blank">Mission Aviation Fellowship (MAF)</a>.  Jacyln nurtures and teaches her young children as well as uses her skills as a Registered Nurse and Instructor to help people in need.
+</p>
+<p>
+You can keep informed with the Reiersons by the subscribing to their <a href="#" data-toggle="tooltip"  data-placement="top" title="A RSS feed allows you to receive a message when there is a new post.  Popular RSS readers are feedly.com or iNoReader.com and others." >RSS feed</a> (below).  Brett and Jacyln regularly post ministry and family news on this site.  Here are their latest posts:
+</p>
+{% assign latest_ministry_post = site.categories['ministry'] | first %}
+{% if latest_ministry_post %}
+<div class="post-preview">
+    <a href="{{ latest_ministry_post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">{{ latest_ministry_post.title }}</h2>
+        {% if latest_ministry_post.subtitle %}
+        <h3 class="latest_ministry_post.subtitle">{{ latest_ministry_post.subtitle }}</h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted on {{ latest_ministry_post.date | date: "%B %-d, %Y" }}</p>
+</div>
+{% endif %}
+
+{% assign latest_family_post = site.categories['family'] | first %}
+{% if latest_family_post %}
+<div class="post-preview">
+    <a href="{{ latest_family_post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">{{ latest_family_post.title }}</h2>
+        {% if latest_family_post.subtitle %}
+        <h3 class="latest_family_post.subtitle">{{ latest_family_post.subtitle }}</h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted on {{ latest_family_post.date | date: "%B %-d, %Y" }}</p>
+</div>
+{% endif %}
+<hr>
