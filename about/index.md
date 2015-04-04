@@ -8,11 +8,11 @@ custom_js:
 
 <div role="tabpanel">
 	<!-- Nav Tabs -->
-	<ul class="nav nav-tabs" role="tablist">
-		<li role="presentation" class="active"><a href="#who-we-are" role="tab" data-toggle="tab">Who we are</a></li>
-		<li role="presentation"><a href="#what-we-do" role="tab" data-toggle="tab">What we do</a></li>
-		<li role="presentation"><a href="#where-we-serve" role="tab" data-toggle="tab">Where we serve</a></li>
-		<li role="presentation"><a href="#how-you-can-help"  role="tab" data-toggle="tab">How you can help</a></li>
+	<ul class="nav nav-pills" role="tablist">
+		<li role="presentation" class="active"><a href="#who-we-are" role="tab" data-toggle="pill">Who we are</a></li>
+		<li role="presentation"><a href="#what-we-do" role="tab" data-toggle="pill">What we do</a></li>
+		<li role="presentation"><a href="#where-we-serve" role="tab" data-toggle="pill">Where we serve</a></li>
+		<li role="presentation"><a href="#how-you-can-help"  role="tab" data-toggle="pill">How you can help</a></li>
 	</ul>
 
 	<!-- Tab panes -->
