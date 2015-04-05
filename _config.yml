@@ -16,9 +16,7 @@ facebook_username:  brettnjaclyn.reierson
 #github_username: flyforlife 
 
 # Build settings
-markdown: kramdown
-highlighter: pygments
 paginate: 5
+markdown: kramdown
+#highlighter: pygments
 exclude: ["Gemfile", "Gemfile.lock", "node_modules","package.json", "*.bat"]
-#excerpt_separator: ""
-#gems: [octopress-debugger]
