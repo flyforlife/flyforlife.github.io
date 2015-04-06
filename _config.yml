@@ -16,7 +16,8 @@ facebook_username:  brettnjaclyn.reierson
 #github_username: flyforlife 
 
 # Build settings
-paginate: 5
+num_of_posts_to_paginate: 5
 markdown: kramdown
 #highlighter: pygments
 exclude: ["Gemfile", "Gemfile.lock", "node_modules","package.json", "*.bat"]
+#gems: [octopress-debugger]
