@@ -81,30 +81,4 @@ module Jekyll
       @next_page_path = paginate_path(site, @next_page, category)
     end
   end
-
-  class Jekyll::Post 
-    # Allow navigation to next or previous post within the same category
-
-    def next_in_category
-      return self.next if self.categories.length != 1
-      category_posts = self.site.categories[self.categories[0]]
-      pos = category_posts.index {|post| post.equal?(self)}
-      if  pos && pos < category_posts.length - 1
-           category_posts[pos + 1]
-      else 
-           nil
-      end
-    end
-
-    def previous_in_category
-      return self.previous if self.categories.length != 1
-      category_posts = self.site.categories[self.categories[0]]
-      pos = category_posts.index {|post| post.equal?(self)}
-      if  pos && pos > 0 
-           category_posts[pos - 1]
-      else 
-           nil
-      end
-    end
-  end
 end

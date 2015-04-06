@@ -25,14 +25,16 @@ layout: default
 				{{ content }}
                 <hr>
                 <ul class="pager">
-                    {% if page.previous.url %}
+                    {% assign previous_post = page.previous_in_category %}
+                    {% if previous_post %}
                     <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                        <a href="{{ previous_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{previous_post.title}}">&larr; Previous Post</a>
                     </li>
                     {% endif %}
-                    {% if page.next.url %}
+                    {% assign next_post = page.next_in_category %}
+                    {% if next_post %}
                     <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                        <a href="{{ next_post.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{next_post.title}}">Next Post &rarr;</a>
                     </li>
                     {% endif %}
                 </ul>
