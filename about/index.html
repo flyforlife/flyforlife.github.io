@@ -1,0 +1,33 @@
+---
+layout: page
+title: "About"
+header-img: "img/about-bg.jpg"
+custom_js:
+- about
+---
+
+<div role="tabpanel">
+	<!-- Nav Tabs -->
+	<ul class="nav nav-pills" role="tablist">
+		<li role="presentation" class="active"><a href="#who-we-are" role="tab" data-toggle="pill">Who we are</a></li>
+		<li role="presentation"><a href="#what-we-do" role="tab" data-toggle="pill">What we do</a></li>
+		<li role="presentation"><a href="#where-we-serve" role="tab" data-toggle="pill">Where we serve</a></li>
+		<li role="presentation"><a href="#how-you-can-help"  role="tab" data-toggle="pill">How you can help</a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div role="tab-content">
+		<div role="tabpanel" class="tab-pane fade in active" id="who-we-are"> 
+			{% include_relative who-we-are.md %}
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="what-we-do"> 
+			{% include_relative what-we-do.md %}
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="where-we-serve">
+			{% include_relative where-we-serve.md %}
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="how-you-can-help">
+			{% include_relative how-you-can-help.md %}
+		</div>
+	</div>
+</div>

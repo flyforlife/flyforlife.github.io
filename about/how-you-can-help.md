@@ -1,9 +1,4 @@
----
-layout: page
-title: "About"
-description: "How you can help"
-header-img: "img/about-bg.jpg"
----
+How you can help?
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
 
